@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+	  <script src="assets/js/exif-reader.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+		<link href="assets//css/font/raleway.css" rel=stylesheet">
+		<link href="assets//css/font/roboto.css" rel=stylesheet">
+		
+		<link href="assets/css/main.css" rel=stylesheet media=screen>
+		<!--
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel=stylesheet>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900" rel=stylesheet>
+		-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link href= "assets/css/mapglyphs/2.0/mapglyphs.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		
+		
+		<title>Charlie Chu</title>
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--[if it IE 9]>
+		    <script src="file/html5shiv.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body>
+    	
+        <!-- Template for overlay container -->
+        <!-- Template for hex content -->
+		<template id=hexTemplate>
+		    <li>
+		        <div>
+		            <i></i>
+		            <h1></h1>
+		            <p></p>
+		        </div>
+		    </li>
+		</template>    
+		<!-- Template for empty hex --> 
+		<template id="pusherTemplate">
+		    <li class="pusher"></li>
+		</template>
+		
+		<!-- Template for the images -->
+		<template id="gallery_images_template">
+		    <figure>
+		        <h3 class="img_title"></h3>
+		        <source type="image/jpg">
+		        <img>
+		        <figcaption class="caption"></figcaption>
+		        <!-- <div class="numbertext> 1 / 3 -->
+		    </figure>
+		</template>
+		
+		
+	    <aside role="complementary" id="myNav" class="overlay">
+	        <div class="overlay-container">
+	            <ul id="categories" class="clr"><!-- Template --></ul>
+	        </div>
+	    </aside>
+            
+      <div class="bar-container" id="menu_btn" onclick="openNav(this);">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+	    </div>
+        <!-- content display flex and direction column -->
+	    <section id="content"> 
+	        
+	        
+    	    <header class="siteheader" role="banner">
+    	        <h1 id="site-title">Charlie Chu</h1>
+    	        <p id="site-description">Journalist</p>
+    	    </header>
+    	   
+    	   <main>
+        	    <section class="slider">
+            	    <article class="sideshow-container">
+            	        <figure id="image_slider" class="gallery shadow horizontal-scroll-wrapper">
+            	            <div class = "gallery-container">
+            	                <h1 id="gallery_title"></h1>
+            	                <blockquote id="gallery_caption"></blockquote>
+            	            </div>
+            	            <!-- Template -->
+            	        </figure>
+            	    </article>
+        	    </section>
+        	    
+        	    <section class="indicator">
+        	        <!-- Next and previous buttons -->
+        	        <div class="flex-container">
+        	            <div><a class="prev" onclick="plusSlides(-1, this);"><i class="fa fa-angle-left"></i></a></div>
+        	            <!-- The dots/circles -->
+        	            <div id="dots" class="dot-container"></div>
+        	            <div><a class="next" onclick="plusSlides(1, this);"><i class="fa fa-angle-right"></i></a></div>
+            	   </div> 
+        	    
+        	    </section>
+    	    </main>
+    	    
+    	    <footer role="contentinfo">
+    	        <p>
+    	            Copyright &copy; 2018 · All Rights Reserved · Experiments by Charlie Chu · 
+    	            Resources via <a href="http://mapglyphs.com/" alt="Mapglyphs" target="_blank">Mapglyphs</a> · 
+    	            <span id="contacts">
+    	                <a href="mailto:mycharliechu@gmail.com" alt="mail" target="_blank"><i class="far fa-envelope fa-lg"></i></a>
+    	                <a href="https://www.instagram.com/mycharliechu/" alt="instagram" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+    	                <a href="https://api.whatsapp.com/send?phone=+447509609953" alt="whatsapp" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
+    	                <a href="https://500px.com/mycharliechu" alt="500px" target="_blank"><i class="fab fa-500px fa-lg"></i></a>
+    	            </span>
+    	        </p>
+    	    </footer>
+	    </section>
+	</body>
+</html>
